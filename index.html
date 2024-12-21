@@ -10,7 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -28,7 +29,7 @@
 </head>
 
 <body class="bg-zinc-100 mx-auto max-w-screen-lg">
-    <header>
+    <header data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-offset="200">
         <div class="flex justify-around items-center mt-10 mb-5">
             <img src="./img/coracaozinho.png" alt="heart" class="w-10 h-10">
             <h1 class="font-poppins text-4xl font-bold text-center text-indigo-950">Nalyna & Clara</h1>
@@ -36,7 +37,8 @@
         </div>
     </header>
     <main>
-        <section class=" text-sm font-poppins ">
+        <section class=" text-sm font-poppins" data-aos="fade-down" data-aos-easing="ease-in-out"
+            data-aos-duration="1000" data-aos-offset="200" data-aos-delay="50">
             <p class="mb-2 text-gray-900">
                 Supresaaa! Veio nosso sitezinho para armezenar nossos momentos e encontrinhos do fofoquinha day.
             </p>
@@ -70,52 +72,17 @@
         </section>
 
         <section class="flex flex-col items-center justify-center">
-            <h2 class="text-4xl text-indigo-950 font-bold text-center mt-10 mb-5">Momentos</h2>
-            <p class="text-center text-sm mb-10 text-gray-900 font-poppins ">
-                Aqui quero deixar registrado alguns momentos especiais que passamos juntas, desde o começo de tudo.
-                Espero que possamos criar ainda mais memórias, você é a minha pessoa e companhia favorita! 💜
-            </p>
+            <div data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-offset="200"
+                data-aos-delay="80">
+                <h2 class="text-4xl text-indigo-950 font-bold text-center mt-10 mb-5">Momentos</h2>
+                <p class="text-center text-sm mb-10 text-gray-900 font-poppins ">
+                    Aqui quero deixar registrado alguns momentos especiais que passamos juntas, desde o começo de tudo.
+                    Espero que possamos criar ainda mais memórias, você é a minha pessoa e companhia favorita! 💜
+                </p>
+            </div>
 
-            <!-- <div class="grid grid-cols-3 gap-6 mx-auto">
-                <div class="bg-white shadow-lg p-4 flex flex-col origin-bottom -rotate-6">
-                    <img class="w-full" src="/img/pic.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">17/03/2024</p>
-                </div>
-                <div class="bg-white shadow-lg p-4 flex flex-col">
-                    <img class= "w-full" src="/img/pic2.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">16/10/2023</p>
-                </div>
-                <div class="bg-white shadow-lg p-4 flex flex-col origin-bottom rotate-6">
-                    <img class= "w-full" src="/img/pic3.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">11/03/2023</p>
-                </div>
-                <div class="bg-white shadow-lg p-4 flex flex-col">
-                    <img class="w-full" src="/img/pic9.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">23/10/2023</p>
-                </div>
-                <div class="bg-white shadow-lg p-4 flex flex-col">
-                    <img class="w-full" src="/img/pic5.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">06/04/2022</p>
-                </div>
-                <div class="bg-white shadow-lg p-4 flex flex-col">
-                    <img class="w-full" src="/img/pic6.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">05/05/2024</p>
-                </div>
-                <div class="bg-white shadow-lg p-4 flex flex-col origin-bottom rotate-6">
-                    <img class="w-full" src="/img/pic7.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">16/09/2024</p>
-                </div>
-                <div class="bg-white shadow-lg p-4 flex flex-col">
-                    <img class="w-full" src="/img/pic8.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">07/08/2024</p>
-                </div>
-                <div class="bg-white shadow-lg p-4 flex flex-col origin-bottom -rotate-6">
-                    <img class="w-full" src="/img/pic4.jpg" alt="">
-                    <p class="mt-2 text-lg text-gray-700 font-caveat">05/05/2019</p>
-                </div>
-            </div> -->
-
-            <div class="grid grid-cols-3 gap-8 mx-auto px-4">
+            <div class="grid grid-cols-3 gap-8 mx-auto px-4" data-aos="fade-down" data-aos-easing="ease-in-out"
+                data-aos-duration="1000" data-aos-offset="200" data-aos-delay="100">
                 <div
                     class="bg-white shadow-lg p-4 flex flex-col origin-bottom rotate-3 transition-transform duration-500 hover:scale-105">
                     <img class="w-full rounded-lg" src="/img/pic.jpg" alt="">
@@ -161,15 +128,19 @@
                     <img class="w-full rounded-lg" src="/img/pic4.jpg" alt="">
                     <p class="mt-2 text-lg text-gray-700 font-caveat">05/05/2019</p>
                 </div>
-            </div>
 
 
 
         </section>
     </main>
     <footer>
-        <p class="text-center mt-10 mb-10 text-indigo-900 font-poppins ">@Copyright | Clara Dinato 💜</p>
+        <p class="text-center mt-10 mb-10 text-indigo-900 font-poppins" data-aos="fade-in"
+            data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="120">
+            @Copyright | Clara Dinato 💜</p>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
